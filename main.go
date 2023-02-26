@@ -45,6 +45,7 @@ const (
 	TTF_BOLD          = "fonts/Roboto-Bold.ttf"
 	TTF_REGULAR       = "fonts/Roboto-Regular.ttf"
 
+	STYLE_BASE         = "background-color:white"
 	STYLE_TODAYBAR     = "fill:#d4182d"
 	STYLE_TODAYPARTBAR = "fill:orange"
 	STYLE_TIMELINE     = "fill:#44536a"
@@ -321,7 +322,7 @@ func main() {
 	}
 
 	canvas := svg.New(writer)
-	canvas.Start(actualWidth, height)
+	canvas.Start(actualWidth, height, `style="`+STYLE_BASE+`"`)
 	canvas.Def()
 	canvas.Style("text/css", "@import url('https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic');")
 	canvas.DefEnd()
