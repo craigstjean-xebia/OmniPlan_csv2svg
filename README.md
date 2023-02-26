@@ -49,32 +49,32 @@ Usage of ./omniplan_csv2svg:
 See [Sample.csv](examples/Sample.csv)
 
 ```./omniplan_csv2svg -o examples/Sample.svg examples/Sample.csv```
-![Simple](examples/Sample.svg)
+![Simple](examples/Sample.svg?raw=true&sanitize=true)
 
 ---
 
 ```./omniplan_csv2svg -zoom 1 -o examples/SampleZ1.svg examples/Sample.csv```
-![Zoom 1](examples/SampleZ1.svg)
+![Zoom 1](examples/SampleZ1.svg?raw=true&sanitize=true)
 
 ---
 
 ```./omniplan_csv2svg -zoom 1 -level 5 -o examples/SampleZ1L5.svg examples/Sample.csv```
-![Zoom 1 Level 5](examples/SampleZ1L5.svg)
+![Zoom 1 Level 5](examples/SampleZ1L5.svg?raw=true&sanitize=true)
 
 ---
 
 ```./omniplan_csv2svg -level 5 -w 2000 -o examples/SampleL5W2000.svg examples/Sample.csv```
-![Level 5 Width 2000px](examples/SampleL5W2000.svg)
+![Level 5 Width 2000px](examples/SampleL5W2000.svg?raw=true&sanitize=true)
 
 ---
 
 ```./omniplan_csv2svg -t 2 -level 5 -o examples/SampleT2L5.svg examples/Sample.csv```
-![2 days per Tick, Level 5](examples/SampleT2L5.svg)
+![2 days per Tick, Level 5](examples/SampleT2L5.svg?raw=true&sanitize=true)
 
 ---
 
 ```./omniplan_csv2svg -t 4 -level 5 -o examples/SampleT4L5.svg examples/Sample.csv```
-![4 days per Tick, Level 5](examples/SampleT4L5.svg)
+![4 days per Tick, Level 5](examples/SampleT4L5.svg?raw=true&sanitize=true)
 
 ## TODO
 
