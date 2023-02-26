@@ -44,6 +44,38 @@ Usage of ./omniplan_csv2svg:
         output file
 ```
 
+## Examples
+
+See [Sample.csv](examples/Sample.csv)
+
+```./omniplan_csv2svg -o examples/Sample.svg examples/Sample.csv```
+![Simple](examples/Sample.svg)
+
+---
+
+```./omniplan_csv2svg -zoom 1 -o examples/SampleZ1.svg examples/Sample.csv```
+![Zoom 1](examples/SampleZ1.svg)
+
+---
+
+```./omniplan_csv2svg -zoom 1 -level 5 -o examples/SampleZ1L5.svg examples/Sample.csv```
+![Zoom 1 Level 5](examples/SampleZ1L5.svg)
+
+---
+
+```./omniplan_csv2svg -level 5 -w 2000 -o examples/SampleL5W2000.svg examples/Sample.csv```
+![Level 5 Width 2000px](examples/SampleL5W2000.svg)
+
+---
+
+```./omniplan_csv2svg -t 2 -level 5 -o examples/SampleT2L5.svg examples/Sample.csv```
+![2 days per Tick, Level 5](examples/SampleT2L5.svg)
+
+---
+
+```./omniplan_csv2svg -t 4 -level 5 -o examples/SampleT4L5.svg examples/Sample.csv```
+![4 days per Tick, Level 5](examples/SampleT4L5.svg)
+
 ## TODO
 
 - [X] Parse OmniPlan CSV Export
@@ -52,6 +84,7 @@ Usage of ./omniplan_csv2svg:
 - [X] Option to zoom in to a specific id and its children
 - [X] Today indicator
 - [X] Add milestones
+- [ ] Support "To Be Determined" dates
 - [ ] Refactor
 - [ ] Remove uneeded fonts
 - [ ] omnijs for OmniPlan automation (if omnijs can export and can execute something)
